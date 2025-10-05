@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management UI with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 font-sans text-zinc-200 flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
+
+    <main class="w-full max-w-6xl space-y-12">
+
+        <section class="max-w-lg mx-auto bg-zinc-800 p-6 sm:p-8 rounded-xl shadow-lg">
+            <h2 class="text-2xl font-bold text-center text-white mb-6">Add User</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-zinc-400 mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 bg-zinc-700 border border-zinc-600 rounded-lg text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="role" class="block text-sm font-medium text-zinc-400 mb-2">Role</label>
+                    <input type="text" id="role" name="role" class="w-full p-3 bg-zinc-700 border border-zinc-600 rounded-lg text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="bio" class="block text-sm font-medium text-zinc-400 mb-2">Bio</label>
+                    <textarea id="bio" name="bio" rows="4" class="w-full p-3 bg-zinc-700 border border-zinc-600 rounded-lg text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                </div>
+                <div class="mb-6">
+                    <label for="photo" class="block text-sm font-medium text-zinc-400 mb-2">Photo URL</label>
+                    <input type="url" id="photo" name="photo" class="w-full p-3 bg-zinc-700 border border-zinc-600 rounded-lg text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <button type="submit" class="w-full py-3 bg-zinc-600 hover:bg-zinc-700 text-white font-semibold rounded-lg transition-colors">
+                    Submit
+                </button>
+            </form>
+        </section>
+
+        <section class="baba grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
